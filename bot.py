@@ -41,7 +41,7 @@ time.sleep(5)
 try:
     print("trying to disable popup")
     bot.find_element_by_xpath(
-        f".//button[contains(@class, 'ButtonRefuseOpen')]").click()
+        f".//button[contains(@class, 'ButtonRefuseOpen')]|.//div[contains(@class, 'DivCloseBtn')]").click()
 finally:
     print("no pop up, skipping")
 
